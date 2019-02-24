@@ -94,3 +94,14 @@ Step 3/3 : CMD [ "redis-server" ]
 Successfully built dccc0b91d87f
 Successfully tagged naortedgi/redis:latest
 ```
+
+how to import file to inside of container
+
+COPY ./
+
+```sh
+
+docker run -p <local-port:docker-port> <image id>
+```
+
+redirect incoming request from local machine into contianer
