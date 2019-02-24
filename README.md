@@ -76,3 +76,21 @@ docker build .
 ```
 build a docker file in current directory  , returns container id 
 
+```sh
+docker build -t naortedgi/redis:latest .
+```
+build a docker file in current directory and tag it  , returns container id 
+
+```sh
+Sending build context to Docker daemon  2.048kB
+Step 1/3 : FROM alpine
+ ---> caf27325b298
+Step 2/3 : RUN apk add --update redis
+ ---> Using cache
+ ---> 442834e44730
+Step 3/3 : CMD [ "redis-server" ]
+ ---> Using cache
+ ---> dccc0b91d87f
+Successfully built dccc0b91d87f
+Successfully tagged naortedgi/redis:latest
+```
