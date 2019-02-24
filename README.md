@@ -69,3 +69,12 @@ docker exec -it <container id>
 <command> sh
 ```
 Open a Terminal in a container context 
+
+
+## Docker Files
+
+```sh
+docker build .
+```
+build a docker file in current directory  , returns container id 
+
