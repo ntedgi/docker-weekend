@@ -51,8 +51,7 @@ docker logs <id>
 Get all logs of created <container id>
 
 ```sh
-docker exec -it <container id> 
-<command>
+docker exec -it <container id> <command>
 ```
 -it type input exec to the container without it the command want have any chance getting an input and return to the terminal
 Flags = [ -it => -i -t ] 
@@ -65,8 +64,7 @@ Stdout -
 Stderr -
 
 ```sh
-docker exec -it <container id> 
-<command> sh
+docker exec -it <container id> <command> sh
 ```
 Open a Terminal in a container context 
 
